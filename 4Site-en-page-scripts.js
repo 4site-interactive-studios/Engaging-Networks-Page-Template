@@ -1,6 +1,6 @@
 /*****************************
  * 4Site - Engaging Networks - Page Template v1.0.1
- * Repository: https://github.com/4SiteStudios/Engaging-Networks-Page-Template
+ * Repository: https://github.com/4site-interactive-studios/Engaging-Networks-Page-Template/
  ****************************/
 
 /*****************************
