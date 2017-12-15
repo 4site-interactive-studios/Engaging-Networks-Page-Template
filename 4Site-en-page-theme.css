@@ -1,0 +1,837 @@
+/*****************************
+ * 4Site - Engaging Networks - Page Template v1.0.1
+ * Repository: https://github.com/4SiteStudios/Engaging-Networks-Page-Template
+ ****************************/
+
+/**************************************************************
+>>> TABLE OF CONTENTS
+***************************************************************
+# Base Styles
+# General Overrides of EN Styles
+# Flexible Images
+# Inputs
+  ## General
+  ## Textarea
+  ## Select
+  ## Focus State
+  ## Radio & Checkboxes
+  ## Buttons
+# Error Messages
+  ## Input Errors
+  ## Page Errors
+# Loading Spinner
+# Components
+  ## Form Block: Personal Information
+  ## Copy Block: Personal Information Title
+  ## Form Block: Address
+  ## Copy Block: Address Title
+  ## Form Block: Payment Information
+  ## Copy Block: Payment Information Title
+  ## Form Block: Recurring Payment
+  ## Form Block: Donation Amount
+  ## Copy Block: Advocacy
+      ## Contact Block Component: Msg Details
+***************************************************************/
+
+/************************************
+ * Base Styles
+ ***********************************/
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  color: #2a2a2a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: 500;
+}
+
+strong{
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+#main-content-wrapper {
+  margin: 0 auto;
+  max-width: 41.25rem;
+  width: 100%;
+}
+
+#main-content {
+  background-color: #ffffff;
+  padding: 2.1875rem 0 4.375rem 0;
+}
+
+#main-content-inner {
+  margin: 0 auto;
+  padding: 0 1.875rem;
+}
+
+@media (min-width: 41.25em) {
+  body {
+    background-color: #eeeeee;
+  }
+
+  #main-content {
+    margin: 2.1875rem;
+    border-radius: 0.4375rem;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+  }
+}
+
+/************************************
+ * General overrides of EN styles
+ ***********************************/
+
+#main-content-inner > p:first-of-type {
+  text-align: center;
+}
+
+#main-content .en__component--column,
+#main-content .en__field__element {
+  min-width: 100% !important;
+}
+
+#main-content .en__field__item {
+  width: 100%;
+}
+
+#main-content .en__field__label {
+  max-width: 100%;
+  width: auto;
+}
+
+/**
+ * Flexible images
+ */
+#main-content img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/************************************
+ * Inputs
+ ***********************************/
+
+ /* General */
+#main-content input[type="date"],
+#main-content input[type="datetime"],
+#main-content input[type="datetime-local"],
+#main-content input[type="email"],
+#main-content input[type="month"],
+#main-content input[type="number"],
+#main-content input[type="password"],
+#main-content input[type="range"],
+#main-content input[type="search"],
+#main-content input[type="tel"],
+#main-content input[type="text"],
+#main-content input[type="time"],
+#main-content input[type="url"],
+#main-content input[type="week"],
+#main-content textarea {
+  max-width: 100%;
+  width: 100%;
+  min-width: initial;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 2.4375rem;
+  margin: 0 0 1rem;
+  padding: 0.5rem;
+  border: 1px solid #cacaca;
+  border-radius: 0.1875rem;
+  background-color: #fefefe;
+  -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+          box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #0a0a0a;
+  -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+  transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#main-content textarea {
+  height: 20rem;
+  resize: vertical;
+}
+
+#main-content select {
+  height: 2.4375rem;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #cacaca;
+  border-radius: 0.1875rem;
+  background-color: #fefefe;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #0a0a0a;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+  background-origin: content-box;
+  background-position: right center;
+  background-position: right -1rem center;
+  background-repeat: no-repeat;
+  background-size: 0.5625rem 0.375rem;
+  padding-right: 1.5rem;
+  -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+  transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+}
+
+/* Focus state */
+#main-content input[type="date"]:focus,
+#main-content input[type="datetime"]:focus,
+#main-content input[type="datetime-local"]:focus,
+#main-content input[type="email"]:focus,
+#main-content input[type="month"]:focus,
+#main-content input[type="number"]:focus,
+#main-content input[type="password"]:focus,
+#main-content input[type="range"]:focus,
+#main-content input[type="search"]:focus,
+#main-content input[type="tel"]:focus,
+#main-content input[type="text"]:focus,
+#main-content input[type="time"]:focus,
+#main-content input[type="url"]:focus,
+#main-content input[type="week"]:focus,
+#main-content select:focus,
+#main-content textarea:focus {
+  outline: none;
+  border: 1px solid #8a8a8a;
+  background-color: #fefefe;
+  -webkit-box-shadow: 0 0 0.3125rem #cacaca;
+  box-shadow: 0 0 0.3125rem #cacaca;
+  -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+  transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
+}
+
+/* Radio & Checkbox Inputs */
+#main-content .en__field__input--radio,
+#main-content .en__field__input--checkbox {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+#main-content .en__field__input--radio+.en__field__label,
+#main-content .en__field__input--checkbox+.en__field__label {
+  position: relative;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+#main-content .en__field__input--radio+.en__field__label:before,
+#main-content .en__field__input--checkbox+.en__field__label:before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: .5em;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #c3c3c3;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 0 5px #fff;
+          box-shadow: inset 0 0 0 5px #fff;
+  cursor: pointer;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+  -webkit-transition-property: border-color, background-color;
+  transition-property: border-color, background-color;
+}
+
+#main-content .en__field__input--checkbox+.en__field__label:before {
+  border-radius: 10%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#main-content .en__field__input--radio:checked+.en__field__label:before,
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+  border-color: #2ba6cb;
+  background-color: #2ba6cb;
+}
+
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+  content: "\a0\2713";
+  border-color: #2ba6cb;
+  background-color: #2ba6cb;
+  color: #ffffff;
+}
+
+#main-content .en__field__input--radio:focus + .en__field__label:before,
+#main-content .en__field__input--checkbox:focus + .en__field__label:before {
+  outline: #8a8a8a auto 0.3125rem;
+}
+
+/* Buttons */
+#main-content button {
+  display: block;
+  width: 100%;
+  margin: 0 0 1rem 0;
+  font-family: inherit;
+  padding: 0.85rem 1rem;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0.1875rem;
+  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: #2ba6cb;
+  color: #fefefe;
+}
+
+#main-content .en__submit {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#main-content button:hover,
+#main-content button:focus {
+  background-color: #258dad;
+}
+
+#main-content button[disabled],
+#main-content button[disabled]:hover,
+#main-content button[disabled]:focus {
+  background-color: #1779ba;
+  color: #fefefe;
+}
+
+#main-content button[disabled] {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+/* Split Text: 2Up */
+@media (min-width: 41.25em) {
+  #main-content .en__field__element--splittext > .en__field__item {
+    width: 48.75%;
+  }
+
+  #main-content .en__field__element--splittext > .en__field__item:first-child {
+    margin-right: 0.25rem;
+  }
+
+  #main-content .en__field__element--splittext > .en__field__item:last-child {
+    margin-left: 0.25rem;
+  }
+}
+
+/* Split Triple Text: 3Up */
+@media (min-width: 41.25em) {
+  #main-content .en__field__element--tripletext > .en__field__item {
+    width: 31.75%;
+  }
+
+  #main-content .en__field__element--tripletext > .en__field__item:nth-of-type(2) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* Split Select: 2Up */
+@media (min-width: 41.25em) {
+  #main-content .en__field__element--splitselect > .en__field__item {
+    width: 48.75%;
+  }
+
+  #main-content .en__field__element--splitselect > .en__field__item:nth-of-type(1) {
+    margin-right: 0.25rem;
+  }
+
+  #main-content .en__field__element--splitselect > .en__field__item:nth-of-type(2) {
+    margin-left: 0.25rem;
+  }
+}
+
+/* Split Triple Select: 3Up */
+@media (min-width: 41.25em) {
+  #main-content .en__field__element--tripleselect > .en__field__item {
+    width: 31.75%;
+  }
+
+  #main-content .en__field__element--tripleselect > .en__field__item:nth-of-type(2) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* Sample Radio: 3Up */
+@media (min-width: 41.25em) {
+  #main-content .en__field--sample-radio > .en__field__element--radio > .en__field__item {
+    width: 31.75%;
+  }
+
+  #main-content .en__field--sample-radio > .en__field__element--radio > .en__field__item:nth-of-type(2n) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/************************************
+ * Loading spinner for submit button
+ ***********************************/
+
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-top: -0.1875rem;
+  vertical-align: middle;
+}
+
+.loader-quart {
+  border-radius: 50%;
+  border: 0.375rem solid rgba(255, 255, 255, 0.4);
+}
+.loader-quart:after {
+  content: '';
+  position: absolute;
+  top: -0.375rem;
+  right: -0.375rem;
+  bottom: -0.375rem;
+  left: -0.375rem;
+  border-radius: 3.125rem;
+  border: 0.375rem solid transparent;
+  border-top-color: #ffffff;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    tranform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    tranform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    tranform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    tranform: rotate(360deg);
+  }
+}
+
+/************************************
+ * Error Messages
+ ***********************************/
+
+/* Input Errors */
+#main-content .en__component .en__field--text {
+  position: relative;
+}
+
+#main-content .en__component .en__field__error {
+  position: absolute;
+  top: -1.25rem;
+  padding: 0.25rem 0.25rem;
+  color: #b71c1c;
+  font-size: 0.75rem;
+  border-radius: 0.1875rem;
+  background-color: #f4ddda;
+}
+
+/* Page Errors */
+.en__errorHeader {
+  margin-left: -1.875rem;
+  margin-right: -1.875rem;
+  padding: 0.5rem 2rem;
+  color: #b71c1c;
+  font-weight: 700;
+  text-align: center;
+  background-color: #f4ddda;
+}
+
+.en__errorList > .en__error {
+  margin-left: -1.875rem;
+  margin-right: -1.875rem;
+  padding: 0.5rem 2rem;
+  list-style: none;
+  color: #b71c1c;
+  text-align: center;
+  background-color: #f4ddda;
+}
+
+/************************************
+ * Components
+ ***********************************/
+
+/**
+ * Form Block Component: Personal Information
+ */
+@media (min-width: 41.25em) {
+  /* Safari 5.1 Windows */
+  #main-content .en__component--formblock.personal-information > .en__field {
+    display: inline-block;
+    width: 48%;
+  }
+
+  #main-content .en__component--formblock.personal-information>.en__field:nth-child(3) {
+    width: 100%;
+  }
+
+  /* Modern Browsers */
+  #main-content .en__component--formblock.personal-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  #main-content .en__component--formblock.personal-information > .en__field {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+
+  #main-content .en__component--formblock.personal-information>.en__field:nth-child(3) {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  #main-content .en__component--formblock.personal-information>.en__field:nth-child(1) {
+    margin-right: 0.5rem;
+  }
+
+  #main-content .en__component--formblock.personal-information>.en__field:nth-child(2) {
+    margin-left: 0.5rem;
+  }
+}
+
+/**
+ * Copy Block Component: Personel Information Title
+ */
+#main-content .en__component--copyblock.personal-information-title > h2 {
+  margin-left: 2rem;
+}
+
+#main-content .en__component--copyblock.personal-information-title > h2:before {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -2rem;
+  margin-right: 0.5rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABe0lEQVRYR+2W4TEEQRCFv4sAGZABESACMkAEZIAMiAAZEAEiIANCIALqq9s9e1e7Nd2zVfbPddXV1NZ1v37zeqanZ0xss4nzsyZQo8ABcAK4bjcl/ARegIdmDVc2S+AUuCugnwH3UQYZAu72Iwi8A6hK0TIEboDzIuLc4Ra4iPhmCFjj/Qgo8NqckaJ7hsAXsFFEnDvouxXxzRD4iQB2fELYIacGdE1gcgUmvwV2N1twxGzJds2iZQ7hLvBWRJw77AHvEd8MAfEiZQg3IQGzBHwP3NlQQ/oGVCr0DtQQMMYEKrFKwuQ+0SHp2/JkFWjj+l5GW68tOGW1BEyy2heqsKJBm81LqMSWwG/Xrim9CrhaIg9jUZESAe/yEXCc0vXP+RHwZ1/otSEC7tTRq535KvMvwrwVjmoqs2R9BK6Ay7EZB+LFvu7+t0ogM3bVclwa17oElP25FjUZd9iWo0vAw+KB+w97ag92l0Bm5htLcjEzlq7h2ETF+MkJ/AKQCTkh5Nk4+QAAAABJRU5ErkJggg==');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/**
+ * Form Block Component: Address
+ */
+#main-content .en__component--formblock.address > .en__field--select {
+  width: 100%;
+}
+
+@media (min-width: 41.25em) {
+  /* Safari 5.1 Windows */
+  #main-content .en__component--formblock.address > .en__field {
+    display: inline-block;
+    width: 48%;
+  }
+
+  /* Modern Browsers */
+  #main-content .en__component--formblock.address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  #main-content .en__component--formblock.address > .en__field {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+
+  #main-content .en__component--formblock.address > .en__field:nth-child(odd) {
+    margin-right: 0.5rem;
+  }
+
+  #main-content .en__component--formblock.address > .en__field:nth-child(even) {
+    margin-left: 0.5rem;
+  }
+}
+
+/**
+ * Copy Block Component: Address Title
+ */
+#main-content .en__component--copyblock.address-title > h2 {
+  margin-left: 2rem;
+}
+
+#main-content .en__component--copyblock.address-title > h2:before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: -2rem;
+  margin-right: 0.5rem;
+  height: 2rem;
+  width: 1.75rem;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB6UlEQVRYR6WX/TFlQRDFz4uADKwIEAEbASJABIgAEVgRIAJEgAgQATIgAupXdUeN2Zme7rld9f66fbrP9PdbKC77kjYlrU8/LDxPv1tJdxGTi4DyjqRzSX86mDdJx5Ig0xUvgX+SDrvWfiuAgYgpHgIjzpPTC0lHFoMeAcJ+UzGA4asp73ymHnC0V9HdtdLRI0A+VzKjn5K2MselP4g8SFrKPmBjtRUFiwDVflkANwznSRUSTwWuGQWLACHOQ9rNZ+a0xF5L4kH/iUWA3l7LEJ7Xt6KALfAhAl+Fdq9eSuMuvGXUZcBoMRc+QmBOCuBZ9WURoJ2Y+e6hYhTh49S+oRooKxmwJwq1Nhzqgtoc+JD0tzOI7iUtF089mCZnKAJsvddGkREd5gLthfBqllW116dJyEQMEUC5nAVG0Tc/vWR3Q5gAC4YbYI6wktmoVekNFysNXlIsomr4m71ZWOay2fZ6K/Q4z1jpTelFACDrl8oeETqGeTKLAOByKHnINIdPDvZEYDQK3dd7ayARjkTB9foogUhHmJU/koKEOZV00imAM0noucRbA8kYM57pmB+quaP3aeqxM1wSJdArSFfhzUlBwtb+rESO1h8OIxEAXKYiHPrEYJQA+Pzw8Bwq1ZqYQwCDaf9zHwzJN9UKWyGqF8gUAAAAAElFTkSuQmCC');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/**
+ * Form Block Component: Payment Information
+ */
+#main-content .en__component--formblock.payment-information > .en__field--ccexpire > .en__field__element--splitselect > .en__field__item {
+  padding: 0;
+  width: 40%;
+}
+
+@media (min-width: 41.25em) {
+  /* Safari 5.1 Windows */
+  #main-content .en__component--formblock.payment-information > .en__field {
+    display: inline-block;
+    width: 48%;
+  }
+
+  /* Modern Browsers */
+  #main-content .en__component--formblock.payment-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  #main-content .en__component--formblock.payment-information > .en__field {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+
+  #main-content .en__component--formblock.payment-information > .en__field:nth-child(odd) {
+    margin-right: 0.5rem;
+  }
+
+  #main-content .en__component--formblock.payment-information > .en__field:nth-child(even) {
+    margin-left: 0.5rem;
+  }
+}
+
+/**
+ * Copy Block Component: Payment Information Title
+ */
+#main-content .en__component--copyblock.payment-information-title > h2 {
+  margin-left: 2rem;
+}
+
+#main-content .en__component--copyblock.payment-information-title > h2:before {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -2rem;
+  margin-right: 0.5rem;
+  height: 1.75rem;
+  width: 2rem;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAtElEQVRYR+2WwQ3CMAxFXyfoCGUEOgkrsAEjEDZghG5URmg26AYgR40ERVVQgpwe7FsOzn/6tmw3VI6msj4GEB24AyfgoFSSCRiAmwCI+EVJeC0TAGagBXrgoQRyBEZgEoDnIqrdkEHXAN4dUCr/p4wBmAO7csAGkTkQHVgvp9Q7d4JuLqOU4L+2pwHs5x6oeZJ56XwHXHNbuTAvHKUSAnEGusIPf033y1nutKffF6ABVHfgBWDaOs5lsuVZAAAAAElFTkSuQmCC');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/**
+ * Form Block Component: Recurring Payment
+ */
+#main-content .en__component--formblock.recurring-payment > .en__field--recurrfreq {
+  display: none;
+}
+
+#main-content .en__component--formblock.recurring-payment > .en__field--recurrpay .en__field__item {
+  height: 2.5rem;
+  width: auto;
+}
+
+#main-content .en__component--formblock.recurring-payment > .en__field--recurrpay .en__field__item:nth-child(1) {
+  margin-right: 0.5rem;
+}
+
+#main-content .en__component--formblock.recurring-payment > .en__field--recurrpay .en__field__item:nth-child(2) {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 31.25em) {
+  #main-content .en__component--formblock.recurring-payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  #main-content .en__component--formblock.recurring-payment>.en__field {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+}
+
+/**
+ * Form Block Component: Donation Amount
+ */
+
+/* Safari 5.1 Windows */
+#main-content .en__component--formblock.donation-amt .en__field__item.en__field__item--hidden {
+  display: inline-block; 
+}
+
+/* Modern Browsers */
+#main-content .en__component--formblock.donation-amt .en__field__item.en__field__item--other {
+  display: inline-flex;
+}
+
+#main-content .en__component--formblock.donation-amt .en__field__element--radio > .en__field__item {
+  height: 2.5rem;
+}
+
+#main-content .en__component--formblock.donation-amt .en__field__element--radio > .en__field__item {
+  width: 32%;
+}
+
+#main-content .en__component--formblock.donation-amt .en__field__element--radio > .en__field__item--other {
+  width: calc(32% - 32px);
+}
+
+#main-content .en__component--formblock.donation-amt .en__field__element--radio > .en__field__item--other-radio {
+  width: auto;
+}
+
+@media (min-width: 31.25em) {
+  #main-content .en__component--formblock.donation-amt .en__field__element--radio > .en__field__item {
+    width: 32%;
+  }
+
+  #main-content .en__component--formblock.donation-amt .en__field__element--radio > .en__field__item--other {
+    width: calc(32% - 32px);
+  }  
+
+  #main-content .en__component--formblock.donation-amt .en__field__element--radio > .en__field__item--other-radio {
+    width: auto;
+  }
+
+  #main-content .en__component--formblock.recurring-payment > .en__field__element--radio > .en__field__item {
+    height: 2.5rem;
+  }
+
+  #main-content .en__component--formblock.recurring-payment > .en__field--recurrday .en__field__input--text {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Copy Block Component: Advocacy
+ * Contact Block Component: Message Details
+ * Toggle message area display
+ */
+#main-content .en__component--copyblock.view-message .btn--view-message {
+  padding-left: 0;
+  background-color: #ffffff;
+  color: inherit;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+#main-content .en__component--copyblock.view-message .btn--view-message:before {
+  content: '\2b';
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+#main-content .en__component--copyblock.view-message .btn--view-message.active:before {
+  content: '\2212';
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+#main-content .en__component--contactblock.msgDetails .en__field__input--checkbox+.en__field__label:before {
+  top: -0.5rem;
+}
+
+#main-content .en__component--contactblock.msgDetails {
+  display: none;
+}
+
+#main-content .en__component--contactblock.msgDetails.show {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+/**
+ * Form Block Component: Select Fields
+ * Overrides EN Default Styling to ensure mobile friendly widths
+ */
+.en__field__input--select{
+  min-width: initial;
+}
