@@ -31,6 +31,11 @@ a:focus {
     color: #d65c56;
 }
 
+.en__tweetButton__send a:hover,
+.en__tweetButton__send a:focus{
+    color: #ffffff;
+}
+
 #main-content .en__field__input--radio:checked+.en__field__label:before,
 #main-content .en__field__input--checkbox:checked+.en__field__label:before {
     border-color: #00347e;
@@ -45,4 +50,14 @@ a:focus {
 #main-content button {
     background-color: #d65b55;
     color: #ffffff;
+}
+
+#main-content button:hover,
+#main-content button:focus{
+    background-color: #c83831;
+}
+
+#main-content .en__tweetButton__sent,
+#main-content .en__tweetButton__send{
+    background-color: #d65b55;
 }
