@@ -67,10 +67,6 @@ if (!Element.prototype.matches) {
         activePrevSibling = activeTab.previousElementSibling,
         activeNextSibling = activeTab.nextElementSibling;
 
-    if (activeTab.length > 0) {
-        // do stuff
-    }
-
     activePrevSibling.className += " en__field__item--other-radio";
     var surpriseLabel = activePrevSibling.getElementsByTagName("label")[0];
     var surpriseRadio = activePrevSibling.getElementsByTagName("input")[0];
