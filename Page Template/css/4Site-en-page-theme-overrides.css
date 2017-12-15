@@ -61,3 +61,8 @@ a:focus {
 #main-content .en__tweetButton__send{
     background-color: #d65b55;
 }
+
+#main-content .en__tweetButton__sent:hover,
+#main-content .en__tweetButton__sent:focus{
+    background-color: #c83831;
+}
