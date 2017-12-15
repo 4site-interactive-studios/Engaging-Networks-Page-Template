@@ -1,0 +1,48 @@
+/************************************
+ * Start 4Site Custom Theme CSS
+ ***********************************/
+
+/* Font Overrides */
+body{
+    font-family: "Open Sans",sans-serif;
+}    
+
+/* Color Overrides */
+body{
+    color: #5e5e5f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    color: #02226c;
+}
+
+a{
+    color: #1294bf;
+}
+
+a:hover,
+a:focus {
+    color: #d65c56;
+}
+
+#main-content .en__field__input--radio:checked+.en__field__label:before,
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+    border-color: #00347e;
+    background-color: #00347e;
+}
+
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+    border-color: #00347e;
+    background-color: #00347e;
+}
+
+#main-content button {
+    background-color: #d65b55;
+    color: #ffffff;
+}
