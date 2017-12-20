@@ -63,7 +63,7 @@ if (!Element.prototype.matches) {
      */
 
     //Checks to see if Other Input exists first
-    var hasOtherInput = element.classList.contains("en__field__input--other");
+    var hasOtherInput = document.getElementsByClassName("en__field__input--other");
 
     if(hasOtherInput === true)
     {
