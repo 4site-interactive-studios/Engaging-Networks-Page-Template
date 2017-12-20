@@ -62,36 +62,43 @@ if (!Element.prototype.matches) {
      * Handle surprise radio and input field
      */
 
-    // get elements
-    var activeTab = document.getElementsByClassName('en__field__input--other')[0].parentElement,
-        activePrevSibling = activeTab.previousElementSibling,
-        activeNextSibling = activeTab.nextElementSibling;
+    //Checks to see if Other Input exists first
+    var hasOtherInput = element.classList.contains("en__field__input--other");
 
-    activePrevSibling.className += " en__field__item--other-radio";
-    var surpriseLabel = activePrevSibling.getElementsByTagName("label")[0];
-    var surpriseRadio = activePrevSibling.getElementsByTagName("input")[0];
+    if(hasOtherInput === true)
+    {
+        // get elements
+        var activeTab = document.getElementsByClassName('en__field__input--other')[0].parentElement,
+            activePrevSibling = activeTab.previousElementSibling,
+            activeNextSibling = activeTab.nextElementSibling;
 
-    var surpriseInput = document.querySelector('[name="transaction.donationAmt.other"]');
-    var mainContent = document.getElementById('main-content');
+        activePrevSibling.className += " en__field__item--other-radio";
+        var surpriseLabel = activePrevSibling.getElementsByTagName("label")[0];
+        var surpriseRadio = activePrevSibling.getElementsByTagName("input")[0];
 
-    // remove surprise label text and use as placeholder
-    if (surpriseLabel && surpriseInput) {
-        var surpriseLabelText = surpriseLabel.textContent;
-        surpriseLabel.textContent = '';
-        surpriseInput.placeholder = surpriseLabelText;
-        surpriseInput.setAttribute('aria-label', 'Other donation amount');
+        var surpriseInput = document.querySelector('[name="transaction.donationAmt.other"]');
+        var mainContent = document.getElementById('main-content');
+
+        // remove surprise label text and use as placeholder
+        if (surpriseLabel && surpriseInput) {
+            var surpriseLabelText = surpriseLabel.textContent;
+            surpriseLabel.textContent = '';
+            surpriseInput.placeholder = surpriseLabelText;
+            surpriseInput.setAttribute('aria-label', 'Other donation amount');
+        }
+
+        // set checked attribute on radio
+        // when the other amt input is focused
+        if (surpriseRadio) {
+            mainContent.addEventListener('focus', function(e) {
+                var isOtherDonationAmtInput = e.target.matches('input.en__field__input.en__field__input--other');
+                if (isOtherDonationAmtInput) {
+                    surpriseRadio.setAttribute('checked', '');
+                }
+            }, true);
+        }
     }
 
-    // set checked attribute on radio
-    // when the other amt input is focused
-    if (surpriseRadio) {
-        mainContent.addEventListener('focus', function(e) {
-            var isOtherDonationAmtInput = e.target.matches('input.en__field__input.en__field__input--other');
-            if (isOtherDonationAmtInput) {
-                surpriseRadio.setAttribute('checked', '');
-            }
-        }, true);
-    }
 })();
 
 
