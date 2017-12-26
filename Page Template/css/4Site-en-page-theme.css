@@ -820,8 +820,7 @@ a:focus {
 }
 
 #main-content .msgDetails .en__component--contactblock,
-#main-content .msgDetails .en__component--formblock,
-#main-content .msgDetails .en__contact__detail {
+#main-content .msgDetails .en__component--formblock{
   display: none;
   padding: 0;
 }
@@ -867,7 +866,7 @@ a:focus {
 #main-content #en_actionMessageToggle_SubmitButton button {
 	margin: 0;
 	background-color: #32cc33;
-    color: #ffffff;
+	color: #ffffff;
 }
 
 /* 
