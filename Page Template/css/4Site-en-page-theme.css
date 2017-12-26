@@ -815,18 +815,20 @@ a:focus {
   margin-right: 0.5rem;
 }
 
-#main-content .en__component--contactblock.msgDetails .en__field__input--checkbox+.en__field__label:before {
+#main-content .msgDetails .en__component--contactblock .en__field__input--checkbox+.en__field__label:before {
   top: -0.5rem;
 }
 
-#main-content .en__component--contactblock.msgDetails {
+#main-content .msgDetails .en__component--contactblock,
+#main-content .msgDetails .en__component--formblock {
   display: none;
 }
 
-#main-content .en__component--contactblock.msgDetails.show {
+#main-content .msgDetails.show .en__component--contactblock,
+#main-content .msgDetails.show .en__component--formblock {
   display: block;
   margin-bottom: 2rem;
-}
+}        
 
 /**
  * Form Block Component: Select Fields
