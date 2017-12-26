@@ -1,29 +1,5 @@
 /************************************
- * Start 4Site Custom Theme CSS for Polaris Project
- ***********************************/
-
-/************************************
- * Color Index
- ************************************
-
-    Primary: Action Buttons
-        Background: #32cc33 (Lime Green)
-        Background on Hover: #78922f (Darker Lime Green)
-        Text: #ffffff (White)
-
-    Secondary: Continue Buttons
-        Background: #00337f (Dark Blue)
-        Background on Hover: #02226c (Darker Blue);       
-        Text: #ffffff (White)
-
-    Reduced Focus: Edit / Modification Buttons or Links
-        Background: transpare
-        Text: #999999 (Light Grey)
-
-    Other
-        Background: #d65b55 (Red)
-        Text: #ffffff (White)
-
+ * Start 4Site Custom Theme CSS
  ***********************************/
 
 /* Font Overrides */
@@ -56,33 +32,33 @@ a:focus {
 
 #main-content .en__field__input--radio:checked+.en__field__label:before,
 #main-content .en__field__input--checkbox:checked+.en__field__label:before {
-    border-color: #00337f;
-    background-color: #00337f;
+    border-color: #00347e;
+    background-color: #00347e;
 }
 
 #main-content .en__field__input--checkbox:checked+.en__field__label:before {
-    border-color: #00337f;
-    background-color: #00337f;
+    border-color: #00347e;
+    background-color: #00347e;
 }
 
 #main-content button {
-    background-color: #00337f;
+    background-color: #d65b55;
     color: #ffffff;
 }
 
 #main-content button:hover,
 #main-content button:focus{
-    background-color: #78922f;
+    background-color: #c83831;
 }
 
 #main-content .en__tweetButton__sent,
 #main-content .en__tweetButton__send{
-    background-color: #32cc33;
+    background-color: #d65b55;
 }
 
 #main-content .en__tweetButton__sent:hover,
 #main-content .en__tweetButton__sent:focus{
-    background-color: #78922f;
+    background-color: #c83831;
 }
 
 #main-content .en__tweetButton__send a:hover,
@@ -95,7 +71,7 @@ a:focus {
     background-color: #32cc33;
 }
 
-#main-content .next-step .en__submit button{
+#main-content .next-step .en__submit{
     width: 125px;
     background-color: #00347f;
 }
