@@ -830,6 +830,71 @@ a:focus {
   margin-bottom: 2rem;
 }        
 
+/** New CSS For Collapsed Slim Twitter Cards **/
+
+#main-content #en_actionMessageToggle{
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content form{
+  border-bottom: 1px solid #ccc;
+}
+
+#main-content #en_actionMessageToggle_Content {
+  display: flex;
+  flex: 1;
+}
+
+#main-content #en_actionMessageToggle_Columns{
+  display: flex;
+  flex:1;
+  align-items: center;
+}
+
+#main-content #en_actionMessageToggle_Title{
+  flex-grow: 1;
+}
+
+#main-content #en_actionMessageToggle_Title h2{
+  /* margin: 0; */
+}
+
+#main-content #en_actionMessageToggle_ToggleButton{
+  text-align: right;
+  margin: 0 10px;
+}
+
+#main-content #en_actionMessageToggle_SubmitButton{ 
+  text-align: right;
+}
+
+#main-content #en_actionMessageToggle_ToggleButton button,
+#main-content #en_actionMessageToggle_SubmitButton button{
+	margin: 0;
+}
+
+#main-content #en_actionMessageToggle_ToggleButton button{
+	background-color: transparent;
+	color: #999999;
+}
+
+#main-content #en_actionMessageToggle_SubmitButton button{
+    background-color: #32cc33;
+    color: #ffffff;
+}
+
+html:not(.embedded) #en_actionMessageToggle_ToggleButton,
+html:not(.embedded) #en_actionMessageToggle_SubmitButton{
+	/* display: none; */
+}
+
+html.embedded #en_actionMessageToggle_ToggleButton,
+html.embedded #en_actionMessageToggle_SubmitButton{
+	display: initial;
+}
+
+
 /**
  * Form Block Component: Select Fields
  * Overrides EN Default Styling to ensure mobile friendly widths
