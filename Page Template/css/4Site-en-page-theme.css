@@ -110,7 +110,7 @@ a:focus {
   text-align: center;
 }
 
-#main-content .en__component--column,
+#main-content .en__component--column:not(.en__component--advcolumn),
 #main-content .en__field__element {
   min-width: 100% !important;
 }
