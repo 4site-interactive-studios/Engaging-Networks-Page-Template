@@ -850,10 +850,6 @@ a:focus {
   flex-direction: column;
 }
 
-#main-content form{
-  border-bottom: 1px solid #ccc;
-}
-
 #main-content #en_actionMessageToggle_Content {
   display: flex;
   flex: 1;
