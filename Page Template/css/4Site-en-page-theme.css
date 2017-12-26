@@ -335,6 +335,7 @@ a:focus {
 }
 
 #main-content .next-step .en__submit button{
+	width: initial;
     float: right;
     clear: both;
 }
