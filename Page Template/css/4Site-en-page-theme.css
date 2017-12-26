@@ -329,9 +329,14 @@ a:focus {
   color: #fefefe;
 }
 
-#main-content .en__submit {
+#main-content .en__submit button{
   width: 100%;
   margin-top: 2rem;
+}
+
+#main-content .next-step .en__submit button{
+    float: right;
+    clear: both;
 }
 
 #main-content button:hover,
@@ -861,6 +866,7 @@ a:focus {
   margin: 0;
   background-color: transparent;
   color: #999999;
+  outline:none;
 }
 
 #main-content #en_actionMessageToggle_SubmitButton button {
