@@ -837,6 +837,12 @@ a:focus {
   margin-bottom: 2rem;
 }        
 
+/* Hide Edit and Submit button once a collapsed action is expanded */
+#main-content .msgDetails.show #en_actionMessageToggle_ToggleWrapper,
+#main-content .msgDetails.show #en_actionMessageToggle_SubmitButton{
+	display: none;
+}
+
 /** New CSS For Collapsed Slim Twitter Cards **/
 
 #main-content #en_actionMessageToggle{
