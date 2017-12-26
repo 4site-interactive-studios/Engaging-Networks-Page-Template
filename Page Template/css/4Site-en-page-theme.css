@@ -820,8 +820,10 @@ a:focus {
 }
 
 #main-content .msgDetails .en__component--contactblock,
-#main-content .msgDetails .en__component--formblock {
+#main-content .msgDetails .en__component--formblock,
+#main-content .msgDetails .en__contact__detail {
   display: none;
+  padding: 0;
 }
 
 #main-content .msgDetails.show .en__component--contactblock,
@@ -856,39 +858,25 @@ a:focus {
   flex-grow: 1;
 }
 
-#main-content #en_actionMessageToggle_Title h2{
-  /* margin: 0; */
+#main-content #en_actionMessageToggle_ToggleWrapper button{
+  margin: 0;
+  background-color: transparent;
+  color: #999999;
 }
 
-#main-content #en_actionMessageToggle_ToggleButton{
-  text-align: right;
-  margin: 0 10px;
-}
-
-#main-content #en_actionMessageToggle_SubmitButton{ 
-  text-align: right;
-}
-
-#main-content #en_actionMessageToggle_ToggleButton button,
-#main-content #en_actionMessageToggle_SubmitButton button{
+#main-content #en_actionMessageToggle_SubmitButton button {
 	margin: 0;
-}
-
-#main-content #en_actionMessageToggle_ToggleButton button{
-	background-color: transparent;
-	color: #999999;
-}
-
-#main-content #en_actionMessageToggle_SubmitButton button{
-    background-color: #32cc33;
+	background-color: #32cc33;
     color: #ffffff;
 }
 
+/* 
 html:not(.embedded) #en_actionMessageToggle_ToggleButton,
 html:not(.embedded) #en_actionMessageToggle_SubmitButton{
-	/* display: none; */
+	display: none;
 }
-
+*/
+ 
 html.embedded #en_actionMessageToggle_ToggleButton,
 html.embedded #en_actionMessageToggle_SubmitButton{
 	display: initial;
