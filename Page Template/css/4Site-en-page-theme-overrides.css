@@ -1,5 +1,29 @@
 /************************************
- * Start 4Site Custom Theme CSS
+ * Start 4Site Custom Theme CSS for Polaris Project
+ ***********************************/
+
+/************************************
+ * Color Index
+ ************************************
+
+    Primary: Action Buttons
+        Background: #32cc33 (Lime Green)
+        Background on Hover: #78922f (Darker Lime Green)
+        Text: #ffffff (White)
+
+    Secondary: Continue Buttons
+        Background: #00337f (Dark Blue)
+        Background on Hover: #02226c (Darker Blue);       
+        Text: #ffffff (White)
+
+    Reduced Focus: Edit / Modification Buttons or Links
+        Background: transpare
+        Text: #999999 (Light Grey)
+
+    Other
+        Background: #d65b55 (Red)
+        Text: #ffffff (White)
+
  ***********************************/
 
 /* Font Overrides */
@@ -32,33 +56,33 @@ a:focus {
 
 #main-content .en__field__input--radio:checked+.en__field__label:before,
 #main-content .en__field__input--checkbox:checked+.en__field__label:before {
-    border-color: #00347e;
-    background-color: #00347e;
+    border-color: #00337f;
+    background-color: #00337f;
 }
 
 #main-content .en__field__input--checkbox:checked+.en__field__label:before {
-    border-color: #00347e;
-    background-color: #00347e;
+    border-color: #00337f;
+    background-color: #00337f;
 }
 
 #main-content button {
-    background-color: #d65b55;
+    background-color: #00337f;
     color: #ffffff;
 }
 
 #main-content button:hover,
 #main-content button:focus{
-    background-color: #c83831;
+    background-color: #78922f;
 }
 
 #main-content .en__tweetButton__sent,
 #main-content .en__tweetButton__send{
-    background-color: #d65b55;
+    background-color: #32cc33;
 }
 
 #main-content .en__tweetButton__sent:hover,
 #main-content .en__tweetButton__sent:focus{
-    background-color: #c83831;
+    background-color: #78922f;
 }
 
 #main-content .en__tweetButton__send a:hover,
