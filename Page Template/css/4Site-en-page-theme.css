@@ -882,6 +882,10 @@ a:focus {
 	color: #ffffff;
 }
 
+#main-content .en__contact__detail{
+  padding: 0;
+}
+
 /* 
 html:not(.embedded) #en_actionMessageToggle_ToggleButton,
 html:not(.embedded) #en_actionMessageToggle_SubmitButton{
