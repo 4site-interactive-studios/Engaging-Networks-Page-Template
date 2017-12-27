@@ -556,11 +556,11 @@ a:focus {
   }
 
   #main-content .en__component--formblock.personal-information>.en__field:nth-child(1) {
-    margin-right: 0.5rem;
+    margin-right: 2%;
   }
 
   #main-content .en__component--formblock.personal-information>.en__field:nth-child(2) {
-    margin-left: 0.5rem;
+    margin-left: 2%;
   }
 }
 
@@ -576,7 +576,7 @@ a:focus {
   display: inline-block;
   vertical-align: baseline;
   margin-left: -2rem;
-  margin-right: 0.5rem;
+  margin-right: 2%;
   height: 1.75rem;
   width: 1.75rem;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABe0lEQVRYR+2W4TEEQRCFv4sAGZABESACMkAEZIAMiAAZEAEiIANCIALqq9s9e1e7Nd2zVfbPddXV1NZ1v37zeqanZ0xss4nzsyZQo8ABcAK4bjcl/ARegIdmDVc2S+AUuCugnwH3UQYZAu72Iwi8A6hK0TIEboDzIuLc4Ra4iPhmCFjj/Qgo8NqckaJ7hsAXsFFEnDvouxXxzRD4iQB2fELYIacGdE1gcgUmvwV2N1twxGzJds2iZQ7hLvBWRJw77AHvEd8MAfEiZQg3IQGzBHwP3NlQQ/oGVCr0DtQQMMYEKrFKwuQ+0SHp2/JkFWjj+l5GW68tOGW1BEyy2heqsKJBm81LqMSWwG/Xrim9CrhaIg9jUZESAe/yEXCc0vXP+RHwZ1/otSEC7tTRq535KvMvwrwVjmoqs2R9BK6Ay7EZB+LFvu7+t0ogM3bVclwa17oElP25FjUZd9iWo0vAw+KB+w97ag92l0Bm5htLcjEzlq7h2ETF+MkJ/AKQCTkh5Nk4+QAAAABJRU5ErkJggg==');
@@ -616,11 +616,11 @@ a:focus {
   }
 
   #main-content .en__component--formblock.address > .en__field:nth-child(odd) {
-    margin-right: 0.5rem;
+    margin-right: 2%;
   }
 
   #main-content .en__component--formblock.address > .en__field:nth-child(even) {
-    margin-left: 0.5rem;
+    margin-left: 2%;
   }
 }
 
@@ -636,7 +636,7 @@ a:focus {
   display: inline-block;
   vertical-align: bottom;
   margin-left: -2rem;
-  margin-right: 0.5rem;
+  margin-right: 2%;
   height: 2rem;
   width: 1.75rem;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB6UlEQVRYR6WX/TFlQRDFz4uADKwIEAEbASJABIgAEVgRIAJEgAgQATIgAupXdUeN2Zme7rld9f66fbrP9PdbKC77kjYlrU8/LDxPv1tJdxGTi4DyjqRzSX86mDdJx5Ig0xUvgX+SDrvWfiuAgYgpHgIjzpPTC0lHFoMeAcJ+UzGA4asp73ymHnC0V9HdtdLRI0A+VzKjn5K2MselP4g8SFrKPmBjtRUFiwDVflkANwznSRUSTwWuGQWLACHOQ9rNZ+a0xF5L4kH/iUWA3l7LEJ7Xt6KALfAhAl+Fdq9eSuMuvGXUZcBoMRc+QmBOCuBZ9WURoJ2Y+e6hYhTh49S+oRooKxmwJwq1Nhzqgtoc+JD0tzOI7iUtF089mCZnKAJsvddGkREd5gLthfBqllW116dJyEQMEUC5nAVG0Tc/vWR3Q5gAC4YbYI6wktmoVekNFysNXlIsomr4m71ZWOay2fZ6K/Q4z1jpTelFACDrl8oeETqGeTKLAOByKHnINIdPDvZEYDQK3dd7ayARjkTB9foogUhHmJU/koKEOZV00imAM0noucRbA8kYM57pmB+quaP3aeqxM1wSJdArSFfhzUlBwtb+rESO1h8OIxEAXKYiHPrEYJQA+Pzw8Bwq1ZqYQwCDaf9zHwzJN9UKWyGqF8gUAAAAAElFTkSuQmCC');
@@ -677,11 +677,11 @@ a:focus {
   }
 
   #main-content .en__component--formblock.payment-information > .en__field:nth-child(odd) {
-    margin-right: 0.5rem;
+    margin-right: 2%;
   }
 
   #main-content .en__component--formblock.payment-information > .en__field:nth-child(even) {
-    margin-left: 0.5rem;
+    margin-left: 2%;
   }
 }
 
@@ -697,7 +697,7 @@ a:focus {
   display: inline-block;
   vertical-align: baseline;
   margin-left: -2rem;
-  margin-right: 0.5rem;
+  margin-right: 2%;
   height: 1.75rem;
   width: 2rem;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAtElEQVRYR+2WwQ3CMAxFXyfoCGUEOgkrsAEjEDZghG5URmg26AYgR40ERVVQgpwe7FsOzn/6tmw3VI6msj4GEB24AyfgoFSSCRiAmwCI+EVJeC0TAGagBXrgoQRyBEZgEoDnIqrdkEHXAN4dUCr/p4wBmAO7csAGkTkQHVgvp9Q7d4JuLqOU4L+2pwHs5x6oeZJ56XwHXHNbuTAvHKUSAnEGusIPf033y1nutKffF6ABVHfgBWDaOs5lsuVZAAAAAElFTkSuQmCC');
@@ -718,11 +718,11 @@ a:focus {
 }
 
 #main-content .en__component--formblock.recurring-payment > .en__field--recurrpay .en__field__item:nth-child(1) {
-  margin-right: 0.5rem;
+  margin-right: 2%;
 }
 
 #main-content .en__component--formblock.recurring-payment > .en__field--recurrpay .en__field__item:nth-child(2) {
-  margin-left: 0.5rem;
+  margin-left: 2%;
 }
 
 @media (min-width: 31.25em) {
@@ -812,17 +812,17 @@ a:focus {
 #main-content .en__component--copyblock.view-message .btn--view-message:before {
   content: '\2b';
   display: inline-block;
-  margin-right: 0.5rem;
+  margin-right: 2%;
 }
 
 #main-content .en__component--copyblock.view-message .btn--view-message.active:before {
   content: '\2212';
   display: inline-block;
-  margin-right: 0.5rem;
+  margin-right: 2%;
 }
 
 #main-content .msgDetails .en__component--contactblock .en__field__input--checkbox+.en__field__label:before {
-  top: -0.5rem;
+  top: -2%;
 }
 
 #main-content .msgDetails .en__component--contactblock,
@@ -900,5 +900,5 @@ html.embedded #en_actionMessageToggle_SubmitButton{
  * Overrides EN Default Styling to ensure mobile friendly widths
  */
 .en__field__input--select{
-  min-width: initial;
+  min-width: initial !important;
 }
