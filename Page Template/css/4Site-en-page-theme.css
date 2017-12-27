@@ -214,6 +214,14 @@ a:focus {
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
 }
 
+/**
+ * Form Block Component: Select Fields
+ * Overrides EN Default Styling to ensure mobile friendly widths
+ */
+#main-content .en__field__input--select{
+  min-width: initial !important;
+}
+
 /* Focus state */
 #main-content input[type="date"]:focus,
 #main-content input[type="datetime"]:focus,
@@ -474,6 +482,32 @@ a:focus {
     tranform: rotate(360deg);
   }
 }
+
+
+/************************************
+ * Ellipsis loading animation for placeholder text
+ ***********************************/
+.ellipsis-loader:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 250ms infinite;      
+  animation: ellipsis steps(4,end) 250ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}   
 
 /************************************
  * Error Messages
@@ -881,24 +915,8 @@ a:focus {
 #main-content .en__contact__detail{
   padding: 0;
 }
-
-/* 
-html:not(.embedded) #en_actionMessageToggle_ToggleButton,
-html:not(.embedded) #en_actionMessageToggle_SubmitButton{
-	display: none;
-}
-*/
  
 html.embedded #en_actionMessageToggle_ToggleButton,
 html.embedded #en_actionMessageToggle_SubmitButton{
 	display: initial;
-}
-
-
-/**
- * Form Block Component: Select Fields
- * Overrides EN Default Styling to ensure mobile friendly widths
- */
-.en__field__input--select{
-  min-width: initial !important;
 }
