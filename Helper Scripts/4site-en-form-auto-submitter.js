@@ -12,7 +12,8 @@ var id = getUrlParam('en-auto-submit');
 if (id > "") {
 
     // The en-auto-submit argument is present in the URL
-    document.addEventListener('DOMContentLoaded',function(){
+    //document.addEventListener('DOMContentLoaded',function(){
+    window.addEventListener("load", function(event) {
        document.querySelector('.en__submit button').click();
     });
 
