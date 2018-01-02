@@ -15,10 +15,12 @@ if (id > "") {
     //document.addEventListener('DOMContentLoaded',function(){
 
     // Pause briefly to prevent EN "Request already submitted" errors
+    console.log("en-aut-submit present in URL")
 	setTimeout(function() {
- 
+ 		console.log("500ms pause completed")
 	    window.addEventListener("load", function(event) {
 	       document.querySelector('.en__submit button').click();
+	       console.log("Submit button clicked")
 	    });
 
 	}, 500);
