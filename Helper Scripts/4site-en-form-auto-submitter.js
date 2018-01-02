@@ -13,16 +13,20 @@ if (id > "") {
 
     // The en-auto-submit argument is present in the URL
     //document.addEventListener('DOMContentLoaded',function(){
-
-    // Pause briefly to prevent EN "Request already submitted" errors
+    
     console.log("en-aut-submit present in URL")
-	setTimeout(function() {
- 		console.log("500ms pause completed")
-	    window.addEventListener("load", function(event) {
-	       document.querySelector('.en__submit button').click();
-	       console.log("Submit button clicked")
-	    });
+    window.addEventListener("load", function(event) {
 
-	}, 500);
+    	console.log("Window loaded, waiting 500ms before clicking submit button")
+
+		// Pause briefly to prevent EN "Request already submitted" errors
+		setTimeout(function() {
+			
+			document.querySelector('.en__submit button').click();
+			console.log("Submit button clicked")    
+
+		}, 500);
+		
+	});
 
 }
