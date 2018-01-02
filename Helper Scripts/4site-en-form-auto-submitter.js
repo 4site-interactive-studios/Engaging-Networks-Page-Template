@@ -13,8 +13,14 @@ if (id > "") {
 
     // The en-auto-submit argument is present in the URL
     //document.addEventListener('DOMContentLoaded',function(){
-    window.addEventListener("load", function(event) {
-       document.querySelector('.en__submit button').click();
-    });
+
+    // Pause briefly to prevent EN "Request already submitted" errors
+	setTimeout(function() {
+ 
+	    window.addEventListener("load", function(event) {
+	       document.querySelector('.en__submit button').click();
+	    });
+
+	}, 500);
 
 }
