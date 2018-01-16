@@ -106,7 +106,7 @@ a:focus {
  * General overrides of EN styles
  ***********************************/
 
-/* In the event Theme CSS causes a hidden field to become displayed. Force it's display to remain hidden */ 
+/* In the event Theme CSS causes a hidden field to become displayed, forrce its display to remain hidden */ 
 .en__hidden{
   display: none !important;
 }
