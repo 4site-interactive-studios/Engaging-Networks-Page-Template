@@ -134,23 +134,26 @@ if (!Element.prototype.matches) {
      */
 
     // get the element
-    var viewMessageEl = document.getElementById('viewMessage');
+    
+    // en_actionMessageToggle = document.getElementById('en_actionMessageToggle');
+    var en_actionMessageToggle = document.getElementById('en_actionMessageToggle');
 
-    if (viewMessageEl) {
+    if (en_actionMessageToggle) {
         // get the grandparent element
-        var viewMessageGrandParentEl = viewMessageEl.parentElement.parentElement;
+        // var en_actionMessageDetails = en_actionMessageToggle.parentElement.nextElementSibling;
 
-        // set attributes
-        var msgDetailsEl = viewMessageGrandParentEl.nextElementSibling;
-        msgDetailsEl.classList.add('msgDetails');
-        msgDetailsEl.setAttribute('role', 'tabpanel');
-        msgDetailsEl.setAttribute('aria-labelledby', 'viewMessage');
+        var en_actionMessageDetails = en_actionMessageToggle.parentElement.parentElement;
+
+        en_actionMessageDetails.classList.add('msgDetails');
+        en_actionMessageDetails.setAttribute('role', 'tabpanel');
+        en_actionMessageDetails.setAttribute('aria-labelledby', 'viewMessage');
 
         // toggle the active class value to show/hide
-        viewMessageEl.addEventListener('click', function() {
+        var en_actionMessageToggle_ToggleButton = document.getElementById('en_actionMessageToggle_ToggleButton');
+        en_actionMessageToggle_ToggleButton.addEventListener('click', function() {
             var isExpanded = this.getAttribute('aria-expanded') === 'true';
             this.classList.toggle('active');
-            msgDetailsEl.classList.toggle('show');
+            en_actionMessageDetails.classList.toggle('show');
             this.setAttribute('aria-expanded', !isExpanded);
         });
     }

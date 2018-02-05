@@ -65,3 +65,12 @@ a:focus {
 #main-content .en__tweetButton__send a:focus{
     color: #ffffff;
 }
+
+
+#main-content #en_actionMessageToggle_SubmitButton button {
+    background-color: #32cc33;
+}
+
+#main-content .next-step .en__submit{
+    background-color: #00347f;
+}
