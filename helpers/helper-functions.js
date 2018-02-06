@@ -7,6 +7,9 @@
  * Function Calls
  ***********************************/
 
+document.addEventListener("DOMContentLoaded", domHasLoaded, false);
+window.addEventListener("load", pageHasLoaded, false);
+
 // Provides a function for returning the value of a URL parameter
 // e.g. var id = getUrlParam('en-auto-submit');
 function getUrlParam(name) {
@@ -16,10 +19,12 @@ function getUrlParam(name) {
 
 /************************************
  * On "DOMContentLoaded"
- * The whole document (HTML) has been loaded.
+ * The browser fully loaded HTML, and the DOM tree is built, but external resources like pictures <img> and stylesheets may be not yet loaded.
+ * REF: https://www.kirupa.com/html5/images/summary_72.png
+ * REF: https://www.kirupa.com/html5/running_your_code_at_the_right_time.htm
  ***********************************/
 
-window.addEventListener("DOMContentLoaded", function(event) {
+function domHasLoaded(e) {
     // 4Site Studios helper script for automatically submitting a form on Engaging Networks. Works when "en-auto-submit=1" is present in URL
     // Alternate code using mutation observer to potentially fire sooner: https://pastebin.com/raw/kReLvTL6
     var id = getUrlParam('en-auto-submit');
@@ -27,14 +32,16 @@ window.addEventListener("DOMContentLoaded", function(event) {
         document.querySelector('.en__submit button').click();
 
     }
-});
+}
 
 /************************************
  * On "Load"
- * The whole document (HTML) and its resources (e.g. images, iframes, scripts) have been loaded.
+ * Same as "DOMContentLoaded" but the browser has also loaded all resources (images, styles etc).
+ * REF: https://www.kirupa.com/html5/images/summary_72.png
+ * REF: https://www.kirupa.com/html5/running_your_code_at_the_right_time.htm
  ***********************************/
 
-window.addEventListener("load", function(event) {
+function pageHasLoaded(e) {
 
     // Utilizing PYM responsive iFrame library, resizes parent iFrame any time a child iframe is clicked. This is overkill but a quick fix that solves for most use cases.
     document.onclick = function() {
@@ -56,4 +63,4 @@ window.addEventListener("load", function(event) {
         }
     }
 
-});
+};
