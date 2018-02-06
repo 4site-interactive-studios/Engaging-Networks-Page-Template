@@ -56,6 +56,10 @@ a:focus {
     color: #d65c56;
 }
 
+#main-content:not(embedded){
+    background: #ffffff;
+}
+
 #main-content .en__field__input--radio:checked+.en__field__label:before,
 #main-content .en__field__input--checkbox:checked+.en__field__label:before {
     border-color: #00347e;
