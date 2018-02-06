@@ -218,6 +218,12 @@ a:focus {
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
 }
 
+/* EN sets background to White making it not ideal for non-white backgrounds. This resets it to an initial state "transparent". */
+#main-content .en__contact__toggle,
+#main-content .en__contact--open .en__contact__toggle {
+    background-color: initial;
+}
+
 /**
  * Form Block Component: Select Fields
  * Overrides EN Default Styling to ensure mobile friendly widths
@@ -917,6 +923,7 @@ a:focus {
 }
 
 #main-content .en__contact__detail{
+  background-color: intial;
   padding: 0;
 }
  
