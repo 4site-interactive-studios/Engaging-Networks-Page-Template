@@ -1,7 +1,7 @@
-/*****************************
- * 4Site - Engaging Networks - Page Template v1.0.1
- * Repository: https://github.com/4site-interactive-studios/Engaging-Networks-Page-Template/
- ****************************/
+/************************************
+ * Template: 4Site Template - Parent Theme Base
+ * Project: TBD
+ ***********************************/
 
 /*****************************
  * Element.matches() polyfill

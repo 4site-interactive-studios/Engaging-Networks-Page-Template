@@ -1,0 +1,131 @@
+/************************************
+ * Template: 4Site Template - Parent Theme Base
+ * Project: TBD
+ ***********************************/
+
+
+/************************************
+ * Color Index
+ ************************************
+
+    Primary: Action Buttons
+        Background: #d65b55
+        Background on Hover: #c83831
+        Text: #ffffff
+
+    Secondary: Continue Buttons
+        Background: #00337f
+        Background on Hover: #02226c    
+        Text: #ffffff
+
+    Reduced Focus: Edit / Modification Buttons or Links
+        Background: transparent
+        Text: #999999
+
+    Other
+        Background: #d65b55
+        Text: #ffffff
+
+ ***********************************/
+
+/* Font Overrides */
+body{
+    font-family: "Open Sans",sans-serif;
+}    
+
+/* Color Overrides */
+body{
+    color: #5e5e5f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #02226c;
+}
+
+a{
+    color: #1294bf;
+}
+
+a:hover,
+a:focus {
+    color: #d65c56;
+}
+
+#main-content .en__field__input--radio:checked+.en__field__label:before,
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+    border-color: #00347e;
+    background-color: #00347e;
+}
+
+#main-content .en__field__input--checkbox:checked+.en__field__label:before {
+    border-color: #00347e;
+    background-color: #00347e;
+}
+
+#main-content button {
+    background-color: #d65b55;
+    color: #ffffff;
+}
+
+#main-content button:hover,
+#main-content button:focus{
+    background-color: #c83831;
+}
+
+#main-content .en__tweetButton__send a,
+#main-content .en__tweetButton__sent a{
+    font: 400 13.3333px Arial;
+    padding: 0.85rem 1rem;
+    -webkit-appearance: none;
+    -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+#main-content .en__tweetButton__send{
+    background-color: #32cc33;  
+}
+
+#main-content .en__tweetButton__send:focus,
+#main-content .en__tweetButton__send:hover{
+    cursor: pointer;
+    background-color: #228e23
+}
+
+#main-content .en__tweetButton__sent,
+#main-content .en__tweetButton__sent:hover,
+#main-content .en__tweetButton__sent:focus{
+    background-color: #999999;
+
+}
+
+/* Action Submit Buttons */
+#main-content #en_actionMessageToggle_SubmitButton button,
+#main-content .msgDetails .en__submit button {
+    background-color: #32cc33;
+}
+
+/* Action Submit Buttons Active and Hover */
+#main-content #en_actionMessageToggle_SubmitButton button:hover,
+#main-content #en_actionMessageToggle_SubmitButton button:focus, 
+#main-content .msgDetails .en__submit button:hover,
+#main-content .msgDetails .en__submit button:focus {
+    background-color: #228e23;
+}
+
+/* Next Step Button */
+#main-content .next-step .en__submit button{
+    background-color: #00337f;
+}
+
+/* Next Step Button */
+#main-content .next-step .en__submit button:hover,
+#main-content .next-step .en__submit button:focus{
+    background-color: #02226c;
+}

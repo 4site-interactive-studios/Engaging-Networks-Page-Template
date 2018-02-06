@@ -1,3 +1,8 @@
+/************************************
+ * Template: 4Site Template - Helper Scripts
+ * Project: TBD
+ ***********************************/
+
 // Provides a function for returning the value of a URL parameter
 // e.g. var id = getUrlParam('en-auto-submit');
 function getUrlParam(name) {
