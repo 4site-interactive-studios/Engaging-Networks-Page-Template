@@ -12,16 +12,17 @@ function getUrlParam(name) {
     });
 }
 
-// 4Site Studios helper script for automatically submitting a form on Engaging Networks. Works when "en-auto-submit=1" is present in URL
-// Alternate code using mutation observer to potentially fire sooner: https://pastebin.com/raw/kReLvTL6
 window.addEventListener("load", function(event) {
-    var id = getUrlParam('en-auto-submit');
-    if (id > "") {
-    document.querySelector('.en__submit button').click();
-    }
-});
 
-window.addEventListener("load", function(event) {
+    // 4Site Studios helper script for automatically submitting a form on Engaging Networks. Works when "en-auto-submit=1" is present in URL
+    // Alternate code using mutation observer to potentially fire sooner: https://pastebin.com/raw/kReLvTL6
+    var id = getUrlParam('en-auto-submit');
+    
+        if (id > "") {
+        document.querySelector('.en__submit button').click();
+
+    }
+
     // Utilizing PYM responsive iFrame library, resizes parent iFrame any time a child iframe is clicked. This is overkill but a quick fix that solves for most use cases.
     document.onclick = function() {
 
@@ -34,10 +35,8 @@ window.addEventListener("load", function(event) {
         }, 25);
 
     };
-});
 
-// The Auto Submit argument is present in the local storage, click the submit button.
-window.addEventListener("load", function(event) {
+    // The Auto Submit argument is present in the local storage, click the submit button.
     if (typeof(Storage) !== "undefined") {
       if(localStorage.quickSubmit == 'true') {
         
@@ -46,4 +45,5 @@ window.addEventListener("load", function(event) {
              
       }
     }
+
 });
