@@ -87,7 +87,8 @@ a:focus {
 }
 
 /* Pad's the main content form, unless it's emebeded. */
-body:not(.embedded) #main-content-inner {
+body:not(#en__pagebuilder):not(.embedded) #main-content-inner,
+body#en__pagebuilder:not(.embedded) #main-content-inner {
   padding: 0 1.875rem;
 }
 
