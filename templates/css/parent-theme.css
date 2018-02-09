@@ -139,13 +139,6 @@ body:not(.embedded) #main-content-inner {
   height: auto !important;
 }
 
-/* EN sets rows to be "display:block" on screen smaller than 600px. This can break layouts and a better solution is t set "flex-shrink" **/
-@media only screen and (max-width: 600px), only screen and (max-device-width: 600px){
-  .en__component--row {
-    display: initial;
-    flex-shrink: 0;
-  }
-}
 /************************************
  * Inputs
  ***********************************/
@@ -364,8 +357,7 @@ body:not(.embedded) #main-content-inner {
 
 #main-content .next-step .en__submit button{
   width: initial;
-  float: right;
-  clear: both;
+  margin-left: auto;
 }
 
 #main-content button:hover,
