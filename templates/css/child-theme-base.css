@@ -56,7 +56,7 @@ a:focus {
     color: #d65c56;
 }
 
-#main-content:not(embedded){
+#main-content:not(.embedded){
     background: #ffffff;
 }
 
