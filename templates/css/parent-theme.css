@@ -95,10 +95,10 @@ body:not(#en__pagebuilder):not(.embedded) #main-content-inner{
 
 @media (min-width: 41.25em) {
   body {
-    background-color: #eeeeee;
+    /* background-color: #eeeeee; */
   }
 
-  #main-content {
+  body:not(.embedded) #main-content {
     margin: 2.1875rem;
     border-radius: 0.4375rem;
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
