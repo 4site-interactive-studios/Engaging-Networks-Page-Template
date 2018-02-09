@@ -139,6 +139,11 @@ body:not(.embedded) #main-content-inner {
   height: auto !important;
 }
 
+/* Remove fixed min-width on Thermometer bar */
+.enWidget__bar .enWidget__progress{
+  min-width: initial;
+}
+
 /************************************
  * Inputs
  ***********************************/
