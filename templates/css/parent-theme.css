@@ -160,6 +160,11 @@ body.embedded #main-content .en__tweetButton{
   padding-right: 0px;
 }
 
+/* If in page builder, give the background some color so that input fields stand out */
+body#en__pagebuilder{
+  background-color: #f1f1f1;
+}
+
 /************************************
  * Inputs
  ***********************************/
