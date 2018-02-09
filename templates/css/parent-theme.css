@@ -111,42 +111,42 @@ body:not(#en__pagebuilder):not(.embedded) #main-content-inner{
  ***********************************/
 
 /* In the event Theme CSS causes a hidden field to become displayed, forrce its display to remain hidden */ 
-.en__hidden{
+#main-content .en__hidden{
   display: none !important;
 }
 
-.en__component--column:not(.en__component--advcolumn),
-.en__field__element {
+#main-content .en__component--column:not(.en__component--advcolumn),
+#main-content .en__field__element {
   min-width: 100% !important;
 }
 
-.en__field__item {
+#main-content .en__field__item {
   width: 100%;
 }
 
-.en__field__label {
+#main-content .en__field__label {
   max-width: 100%;
   width: auto;
 }
 
 
 /* Responsive images */
-img {
+#main-content img {
   max-width: 100%;
   height: auto !important;
 }
 
 /* Remove fixed min-width on Thermometer bar */
-.enWidget__bar .enWidget__progress{
+#main-content .enWidget__bar .enWidget__progress{
   min-width: initial;
 }
 
 /* Make sure that background colors are not hard coded */
-.en__twitterTarget,
-.en__tweetBackgroundText,
-.en__tweet,
-.en__tweetDisabled,
-.en__tweetButton{
+#main-content .en__twitterTarget,
+#main-content .en__tweetBackgroundText,
+#main-content .en__tweet,
+#main-content .en__tweetDisabled,
+#main-content .en__tweetButton{
   background-color: initial;
 }
 
