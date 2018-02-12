@@ -71,7 +71,7 @@ if (!Element.prototype.matches) {
             }
         });
     }
-})();
+})(); 
 
 (function() {
     /**
@@ -79,12 +79,12 @@ if (!Element.prototype.matches) {
      */
 
     //Checks to see if Other Input exists first
-    var hasOtherInput = document.getElementsByClassName("en__field__input--other");
+    var otherInput = document.getElementsByClassName("en__field__input--other");
 
-    if(hasOtherInput === true)
+    if(otherInput.length)
     {
         // get elements
-        var activeTab = document.getElementsByClassName('en__field__input--other')[0].parentElement,
+        var activeTab = otherInput[0].parentElement,
             activePrevSibling = activeTab.previousElementSibling,
             activeNextSibling = activeTab.nextElementSibling;
 
