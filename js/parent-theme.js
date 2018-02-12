@@ -109,7 +109,7 @@ if (!Element.prototype.matches) {
             mainContent.addEventListener('focus', function(e) {
                 var isOtherDonationAmtInput = e.target.matches('input.en__field__input.en__field__input--other');
                 if (isOtherDonationAmtInput) {
-                    surpriseRadio.setAttribute('checked', '');
+                    surpriseRadio.removeAttribute('checked');
                 }
             }, true);
         }
