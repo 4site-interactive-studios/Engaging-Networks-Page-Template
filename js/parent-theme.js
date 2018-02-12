@@ -279,7 +279,7 @@ function domHasLoaded(e) {
 function pageHasLoaded(e) {
 
     // Utilizing PYM responsive iFrame library, resizes parent iFrame any time a child iframe is clicked. This is overkill but a quick fix that solves for most use cases.
-    if (pymChild !== "undefined") {
+    if (typeof pymChild !== "undefined") {
         document.onclick = function() {
 
             // Send height update immedietely. 
