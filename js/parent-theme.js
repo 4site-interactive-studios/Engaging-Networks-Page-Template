@@ -293,7 +293,7 @@ function pageHasLoaded(e) {
     }
 
     // The Auto Submit argument is present in the local storage, click the submit button.
-    if (typeof(Storage) !== "undefined") {
+    if (typeof Storage !== "undefined") {
         if (localStorage.quickSubmit == 'true') {
             // The Auto Submit argument is present in the local storage
             document.querySelector('#en_actionMessageToggle_SubmitButton button').click();
