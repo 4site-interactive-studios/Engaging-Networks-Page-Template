@@ -32,7 +32,7 @@ if (!Element.prototype.matches) {
  * Donation page scripts
  ****************************/
 
-function donateScripts() {
+(function() {
     /**
      * Handle recurring payment date
      */
@@ -71,9 +71,9 @@ function donateScripts() {
             }
         });
     }
-};
+})();
 
-function surpriseInput() {
+(function() {
     /**
      * Handle surprise radio and input field
      */
@@ -81,7 +81,8 @@ function surpriseInput() {
     //Checks to see if Other Input exists first
     var hasOtherInput = document.getElementsByClassName("en__field__input--other");
 
-    if (hasOtherInput === true) {
+    if(hasOtherInput === true)
+    {
         // get elements
         var activeTab = document.getElementsByClassName('en__field__input--other')[0].parentElement,
             activePrevSibling = activeTab.previousElementSibling,
@@ -114,10 +115,10 @@ function surpriseInput() {
         }
     }
 
-};
+})();
 
 
-function securityCodePlaceholder() {
+(function() {
     /**
      * Handle credit card security code placeholder
      */
@@ -137,13 +138,13 @@ function securityCodePlaceholder() {
     function setSecCodePlaceholder(el1, el2, cardType, string1, string2) {
         el1.placeholder = (el2.value === cardType) ? string1 : string2;
     }
-};
+})();
 
 /*****************************
  * Advocacy page scripts
  ****************************/
 
-function toggleAdvocacyMessage() {
+(function() {
     /**
      * Display/hide the message area
      */
@@ -168,9 +169,9 @@ function toggleAdvocacyMessage() {
             this.setAttribute('aria-expanded', !isExpanded);
         });
     }
-};
+})();
 
-function addLabel() {
+(function() {
     /**
      * Insert a <label> for each target contact checkbox
      */
@@ -208,25 +209,25 @@ function addLabel() {
             en__contactDetails.insertBefore(label, en__contactDetails__rows);
         }
     }
-};
+})();
 
 /*****************************
  * Set Input Placeholders
  ****************************/
 
-function addressPlaceholder() {
+(function() {
     // set placeholder for address2
     var address2 = document.getElementById('en__field_supporter_address2');
     if (address2) {
         address2.placeholder = 'Apt, ste, bldg.';
     }
-};
+})();
 
 /*****************************
  * Submit Btn Loading Spinner
  ****************************/
 
-function submitButton() {
+(function() {
     // get the button element
     var submitBtnEl = document.querySelector('div.en__component.en__component--formblock button');
 
@@ -249,7 +250,7 @@ function submitButton() {
     function isMissingRequiredInputs() {
         return document.querySelector('[class="en__field__error"]');
     }
-};
+})();
 
 /************************************
  * On "DOMContentLoaded"
