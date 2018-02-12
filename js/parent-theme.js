@@ -3,6 +3,22 @@
  * Project: TBD
  ***********************************/
 
+/************************************
+ * Loaders
+ ***********************************/
+
+document.addEventListener("DOMContentLoaded", domHasLoaded, false);
+window.addEventListener("load", pageHasLoaded, false);
+
+/*****************************
+ * Provides a function for returning the value of a URL parameter
+ * e.g. var id = getUrlParam('en-auto-submit');
+ ****************************/
+function getUrlParam(name) {
+    var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    return (results && results[1]) || undefined;
+}
+
 /*****************************
  * Element.matches() polyfill
  ****************************/
@@ -134,14 +150,10 @@ if (!Element.prototype.matches) {
      */
 
     // get the element
-    
-    // en_actionMessageToggle = document.getElementById('en_actionMessageToggle');
     var en_actionMessageToggle = document.getElementById('en_actionMessageToggle');
 
     if (en_actionMessageToggle) {
         // get the grandparent element
-        // var en_actionMessageDetails = en_actionMessageToggle.parentElement.nextElementSibling;
-
         var en_actionMessageDetails = en_actionMessageToggle.parentElement.parentElement;
 
         en_actionMessageDetails.classList.add('msgDetails');
@@ -239,3 +251,51 @@ if (!Element.prototype.matches) {
         return document.querySelector('[class="en__field__error"]');
     }
 })();
+
+/************************************
+ * On "DOMContentLoaded"
+ * The browser fully loaded HTML, and the DOM tree is built, but external resources like pictures <img> and stylesheets may be not yet loaded.
+ * REF: https://www.kirupa.com/html5/images/summary_72.png
+ * REF: https://www.kirupa.com/html5/running_your_code_at_the_right_time.htm
+ ***********************************/
+
+function domHasLoaded(e) {
+    // 4Site Studios helper script for automatically submitting a form on Engaging Networks. Works when "en-auto-submit=1" is present in URL
+    // Alternate code using mutation observer to potentially fire sooner: https://pastebin.com/raw/kReLvTL6
+    var id = getUrlParam('en-auto-submit');
+    if (id > "") {
+        document.querySelector('.en__submit button').click();
+
+    }
+}
+
+/************************************
+ * On "Load"
+ * Same as "DOMContentLoaded" but the browser has also loaded all resources (images, styles etc).
+ * REF: https://www.kirupa.com/html5/images/summary_72.png
+ * REF: https://www.kirupa.com/html5/running_your_code_at_the_right_time.htm
+ ***********************************/
+
+function pageHasLoaded(e) {
+
+    // Utilizing PYM responsive iFrame library, resizes parent iFrame any time a child iframe is clicked. This is overkill but a quick fix that solves for most use cases.
+    document.onclick = function() {
+
+        // Send height update immedietely. 
+        pymChild.sendHeight();
+
+        // And then wait a moment before triggering again so any visual page redraw is corrected for.
+        setTimeout(function() {
+            pymChild.sendHeight();
+        }, 25);
+    };
+
+    // The Auto Submit argument is present in the local storage, click the submit button.
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.quickSubmit == 'true') {
+            // The Auto Submit argument is present in the local storage
+            document.querySelector('#en_actionMessageToggle_SubmitButton button').click();
+        }
+    }
+
+};
