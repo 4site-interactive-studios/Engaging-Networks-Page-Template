@@ -32,7 +32,7 @@ if (!Element.prototype.matches) {
  * Donation page scripts
  ****************************/
 
-function() {
+function {
     /**
      * Handle recurring payment date
      */
@@ -73,7 +73,7 @@ function() {
     }
 };
 
-function() {
+function {
     /**
      * Handle surprise radio and input field
      */
@@ -117,7 +117,7 @@ function() {
 };
 
 
-function() {
+function {
     /**
      * Handle credit card security code placeholder
      */
@@ -143,7 +143,7 @@ function() {
  * Advocacy page scripts
  ****************************/
 
-function() {
+function {
     /**
      * Display/hide the message area
      */
@@ -170,7 +170,7 @@ function() {
     }
 };
 
-function() {
+function {
     /**
      * Insert a <label> for each target contact checkbox
      */
@@ -214,7 +214,7 @@ function() {
  * Set Input Placeholders
  ****************************/
 
-function() {
+function {
     // set placeholder for address2
     var address2 = document.getElementById('en__field_supporter_address2');
     if (address2) {
@@ -226,7 +226,7 @@ function() {
  * Submit Btn Loading Spinner
  ****************************/
 
-function() {
+function {
     // get the button element
     var submitBtnEl = document.querySelector('div.en__component.en__component--formblock button');
 
