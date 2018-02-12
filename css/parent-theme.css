@@ -95,7 +95,11 @@ body:not(#en__pagebuilder):not(.embedded) #main-content-inner{
 
 @media (min-width: 41.25em) {
   body {
-    /* background-color: #eeeeee; */
+    background-color: #eeeeee;
+  }
+
+  body #main-content {
+    background-color: #ffffff;
   }
 
   body:not(.embedded) #main-content {
