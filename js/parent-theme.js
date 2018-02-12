@@ -279,16 +279,18 @@ function domHasLoaded(e) {
 function pageHasLoaded(e) {
 
     // Utilizing PYM responsive iFrame library, resizes parent iFrame any time a child iframe is clicked. This is overkill but a quick fix that solves for most use cases.
-    document.onclick = function() {
+    if (pymChild !== "undefined") {
+        document.onclick = function() {
 
-        // Send height update immedietely. 
-        pymChild.sendHeight();
-
-        // And then wait a moment before triggering again so any visual page redraw is corrected for.
-        setTimeout(function() {
+            // Send height update immedietely. 
             pymChild.sendHeight();
-        }, 25);
-    };
+
+            // And then wait a moment before triggering again so any visual page redraw is corrected for.
+            setTimeout(function() {
+                pymChild.sendHeight();
+            }, 25);
+        };
+    }
 
     // The Auto Submit argument is present in the local storage, click the submit button.
     if (typeof(Storage) !== "undefined") {
