@@ -161,7 +161,7 @@ body:not(#en__pagebuilder):not(.embedded) #main-content-inner{
 
 /* When embedded, remove unnecessary padding */
 body.embedded #main-content .en__tweetButton{
-  padding-right: 0px;
+  padding: 19.92px 0 19.92px 0;
 }
 
 /* If in page builder, give the background some color so that input fields stand out */
