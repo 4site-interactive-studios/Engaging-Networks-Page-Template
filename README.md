@@ -11,10 +11,6 @@
 
      https://politicalnetworks.com/page/11184/donate/1?mode=DEMO
 
-- Reading is Fundamental
-
-     https://politicalnetworks.com/page/11147/action/1?mode=DEMO
-
 - Action Against Hunger Canada
 
      https://politicalnetworks.com/page/11197/donate/1?mode=DEMO 
