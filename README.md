@@ -7,14 +7,6 @@
 
      https://us.netdonor.net/page/3640/donate/1?mode=DEMO
      
-- Alaska Wilderness League
-
-     https://politicalnetworks.com/page/11184/donate/1?mode=DEMO
-
-- Action Against Hunger Canada
-
-     https://politicalnetworks.com/page/11197/donate/1?mode=DEMO 
-     
 - Van Andel Institute
 
      https://give.vai.org/page/3770/donate/1?mode=DEMO
