@@ -3,7 +3,7 @@
 
      https://action.cspinet.org/page/16723/donate/1?mode=DEMO
 
-- Turtle Island Resportation
+- Turtle Island Restoration Network
 
      https://us.netdonor.net/page/3640/donate/1?mode=DEMO
      
