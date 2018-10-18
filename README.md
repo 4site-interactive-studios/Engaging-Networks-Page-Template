@@ -10,6 +10,10 @@
 - Van Andel Institute
 
      https://give.vai.org/page/3770/donate/1?mode=DEMO
+ 
+- Just Liberty
+
+     https://e-activist.com/page/32214/action/1
 
 # Demo Page Examples
 - Donate Single Step
