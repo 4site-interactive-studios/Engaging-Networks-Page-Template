@@ -14,6 +14,10 @@
 - Just Liberty
 
      https://e-activist.com/page/32214/action/1
+     
+- Friends of Canadian Broadcasting
+
+     http://act.friends.ca/page/32338/petition/1
 
 # Demo Page Examples
 - Donate Single Step
